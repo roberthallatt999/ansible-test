@@ -1,3 +1,18 @@
+Ansible docs - https://docs.ansible.com/
+
+https://www.learnlinux.tv/getting-started-with-ansible-04-executing-ad-hoc-commands/
+
 ansible all --list-hosts - lists all hosts
 ansible all -m gather_facts - gets all the information about the server
 ansible all -m gather_facts --limit web1 - Limnit info about one or more hosts
+
+Running elevated commands (sudo) - https://learnlinux.tv/getting-started-with-ansible-05-running-elevated-commands/
+
+ansible all -m apt -a update_cache=true --become --ask-become-pass - asks you to enter password for sudo
+
+ansible all -m apt -a "name=snapd state=latest" --become --ask-become-pass - install latest version of package
+
+First playbook
+
+https://www.learnlinux.tv/getting-started-with-ansible-06-writing-our-first-playbook/
+
