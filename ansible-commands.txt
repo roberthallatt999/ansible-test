@@ -1,0 +1,3 @@
+ansible all --list-hosts - lists all hosts
+ansible all -m gather_facts - gets all the information about the server
+ansible all -m gather_facts --limit web1 - Limnit info about one or more hosts
